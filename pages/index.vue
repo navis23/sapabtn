@@ -24,7 +24,7 @@
 					<div class=" bg-gradient-to-r from-btn-yellow to-btn-red w-full h-[0.2rem] rounded-l-full">
 					</div>
 					<h3 class="text-2xl lg:text-4xl font-black text-btn-blue2 leading-none tracking-tight whitespace-nowrap uppercase font-oswald">
-						<span class="text-btn-red">hot promo</span> for you
+						<span class="text-btn-red">special promo</span> for you
 					</h3>
 					<div class=" bg-gradient-to-r from-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-r-full">
 					</div>
@@ -32,16 +32,16 @@
 				<div v-motion-slide-bottom :delay="500" class="relative w-full rounded-lg z-20 bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 p-3 lg:p-6">
 					<div class="grid grid-cols-12 gap-3 lg:gap-6">
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
+							<nuxt-img src="/img/promo06.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
+						</div>
+						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
+							<nuxt-img src="/img/promo05.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
+						</div>
+						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
 							<nuxt-img src="/img/promo01.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
 						</div>
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
 							<nuxt-img src="/img/promo03.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
-						</div>
-						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
-							<nuxt-img src="/img/promo02.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
-						</div>
-						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
-							<nuxt-img src="/img/promo04.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
 						</div>
 					</div>
 				</div>
@@ -232,7 +232,12 @@
 			<p class="absolute py-10 -left-28 lg:-left-72 opacity-10 bottom-20 lg:-bottom-28">
 				<Icon name="ElementThree" class="text-[25rem] lg:text-[40rem] rotate-90"/>
 			</p>
+			<div class="relative flex gap-x-2 lg:gap-x-6 justify-evenly items-center text-center w-full mt-6 lg:mt-8 z-30">
+					<div class=" bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-full">
+					</div>
+				</div>
 		</div>
+		
 
 		<!-- latest program section -->
 		<div class="relative px-4 lg:px-32 py-10 lg:pb-28 overflow-hidden">

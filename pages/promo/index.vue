@@ -9,7 +9,7 @@
 				</div>
 			</div>
             <div class="flex items-start gap-6 relative pb-20">
-                <div class="w-64 sticky top-5">
+                <div class="w-64 hidden lg:block sticky top-5">
                     <div class="bg-slate-50 p-4 shadow-md shadow-gray-400 rounded-lg z-40">
                         <p class="text-btn-blue text-lg font-bold pb-1 mb-3 border-b-2 border-gray-200">
                             Kategori
