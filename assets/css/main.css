@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-display: swap;
+    src: url('~/assets/fonts/Oswald-Light.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-display: swap;
+    src: url('~/assets/fonts/Oswald-Medium.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-display: swap;
+    src: url('~/assets/fonts/Oswald-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/Oswald-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 100;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 200;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 300;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Light.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 600;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 800;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'DM Sans';
+    font-weight: 900;
+    font-display: swap;
+    src: url('~/assets/fonts/DMSans-Black.ttf');
+}
+
+@layer base {
+    html {
+        font-family: 'DM Sans';
+    }
+}
