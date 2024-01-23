@@ -21,15 +21,15 @@
 					<Icon name="lucide:arrow-down" class="text-2xl lg:text-4xl" />
 				</button>
 				<div v-motion-fade  class="relative flex gap-x-2 lg:gap-x-6 justify-evenly items-center text-center w-full mb-4 mt-8 z-30">
-					<div class=" bg-gradient-to-r from-btn-yellow to-btn-red w-full h-[0.2rem] rounded-l-full">
+					<div class=" bg-gradient-to-r from-btn-blue2 to-btn-red w-full h-[0.2rem] rounded-l-full">
 					</div>
 					<h3 class="text-2xl lg:text-4xl font-black text-btn-blue2 leading-none tracking-tight whitespace-nowrap uppercase font-oswald">
 						<span class="text-btn-red">special promo</span> for you
 					</h3>
-					<div class=" bg-gradient-to-r from-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-r-full">
+					<div class=" bg-gradient-to-r from-btn-red to-btn-yellow w-full h-[0.2rem] rounded-r-full">
 					</div>
 				</div>
-				<div v-motion-slide-bottom :delay="500" class="relative w-full rounded-lg z-20 bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 p-3 lg:p-6">
+				<div v-motion-slide-bottom :delay="500" class="relative w-full rounded-lg z-20 bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow p-3 lg:p-6">
 					<div class="grid grid-cols-12 gap-3 lg:gap-6">
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
 							<nuxt-img src="/img/promo06.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 				<div class="relative flex gap-x-2 lg:gap-x-6 justify-evenly items-center text-center w-full mt-6 lg:mt-8 z-30">
-					<div class=" bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-full">
+					<div class=" bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow w-full h-[0.2rem] rounded-full">
 					</div>
 				</div>
 			</div>
@@ -73,150 +73,36 @@
 			</div>
 			<div class="relative z-20 grid grid-cols-12 gap-6">
 				<!-- start promos card -->
-				<div class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
+				<div v-for="(item, index) in all_promo" :key="index" class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
 					<div class="col-span-6 lg:col-span-2">
-						<nuxt-img src="/img/promo01.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
+						<nuxt-img :src="item.gambar_promo" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
 					</div>					
 					<div class="relative col-span-6 lg:col-span-4 p-3 flex flex-col gap-3">
 						<p class="font-semibold font-oswald text-xl text-btn-blue">
-							Flash Sale 11.11 BTN Spekta
+							{{ item.nama_promo }}
 						</p>
 						<div class="space-y-2">
 							<div class="flex items-center gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">1 November 2023 s.d. 31 March 2024</p>
+								<p class="text-sm">{{ item.periode_promo }}</p>
 							</div>
 							<div class="flex items-center gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:book" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">Nasabah melakukan penukaran poin melalui BTN Mobile dengan melakukan klik pada menu Poin Spekta</p>
+								<p class="text-sm">{{ item.jenis_promo }}</p>
 							</div>
 							<div class="flex items-center pb-20 lg:pb-0 gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:users" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">Seluruh nasabah bank BTN yang memiliki Poin Spekta</p>
+								<p class="text-sm">{{ item.nasabah_promo }}</p>
 							</div>
 						</div>
 						<div class="absolute bottom-4 right-4 flex items-center justify-end gap-x-2">
-							<nuxt-link to="/">
-								<ButtonBaseSmall class="btn-invert">
-									<Icon name="lucide:clipboard-list" class="text-lg" />
-									<span>Detail Promo</span>
-								</ButtonBaseSmall>
-							</nuxt-link>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<div class="col-span-6 lg:col-span-2">
-						<nuxt-img src="/img/promo03.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					</div>					
-					<div class="relative col-span-6 lg:col-span-4 p-3 flex flex-col gap-3">
-						<p class="font-semibold font-oswald text-xl text-btn-blue">
-							Transaksi Kartu Debit BTN VISA di Alfamart & Indomaret
-						</p>
-						<div class="space-y-2">
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">1 November 2023 s.d. 31 December 2023</p>
-							</div>
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:book" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Kartu Debit BTN Visa</p>
-							</div>
-							<div class="flex items-center pb-20 lg:pb-0 gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:users" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Nasabah/konsumen BTN Perorangan dan Bisnis</p>
-							</div>
-						</div>
-						<div class="absolute bottom-4 right-4 flex items-center justify-end gap-x-2">
-							<nuxt-link to="/">
-								<ButtonBaseSmall class="btn-invert">
-									<Icon name="lucide:clipboard-list" class="text-lg" />
-									<span>Detail Promo</span>
-								</ButtonBaseSmall>
-							</nuxt-link>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<div class="col-span-6 lg:col-span-2">
-						<nuxt-img src="/img/promo02.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					</div>					
-					<div class="relative col-span-6 lg:col-span-4 p-3 flex flex-col gap-3">
-						<p class="font-semibold font-oswald text-xl text-btn-blue">
-							Flash Sale BTN Poin Spekta November
-						</p>
-						<div class="space-y-2">
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">27 November 2023 s.d. 01 December 2023</p>
-							</div>
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:book" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Poin Spekta</p>
-							</div>
-							<div class="flex items-center pb-20 lg:pb-0 gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:users" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Seluruh nasabah bank BTN yang memiliki poin Spekta</p>
-							</div>
-						</div>
-						<div class="absolute bottom-4 right-4 flex items-center justify-end gap-x-2">
-							<nuxt-link to="/">
-								<ButtonBaseSmall class="btn-invert">
-									<Icon name="lucide:clipboard-list" class="text-lg" />
-									<span>Detail Promo</span>
-								</ButtonBaseSmall>
-							</nuxt-link>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<div class="col-span-6 lg:col-span-2">
-						<nuxt-img src="/img/promo04.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					</div>					
-					<div class="relative col-span-6 lg:col-span-4 p-3 flex flex-col gap-3">
-						<p class="font-semibold font-oswald text-xl text-btn-blue">
-							Program PLN Prepaid Untung Melimpah
-						</p>
-						<div class="space-y-2">
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">25 November 2023 s.d. 10 December 2023</p>
-							</div>
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:book" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">BTN Mobile</p>
-							</div>
-							<div class="flex items-center pb-20 lg:pb-0 gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:users" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Nasabah/konsumen BTN Perorangan</p>
-							</div>
-						</div>
-						<div class="absolute bottom-4 right-4 flex items-center justify-end gap-x-2">
-							<nuxt-link to="/">
+							<nuxt-link :to="`/promo/${item.id_promo}`">
 								<ButtonBaseSmall class="btn-invert">
 									<Icon name="lucide:clipboard-list" class="text-lg" />
 									<span>Detail Promo</span>
@@ -233,7 +119,7 @@
 				<Icon name="ElementThree" class="text-[25rem] lg:text-[40rem] rotate-90"/>
 			</p>
 			<div class="relative flex gap-x-2 lg:gap-x-6 justify-evenly items-center text-center w-full mt-6 lg:mt-8 z-30">
-					<div class=" bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-full">
+					<div class=" bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow w-full h-[0.2rem] rounded-full">
 					</div>
 				</div>
 		</div>
@@ -254,35 +140,41 @@
 			</div>
 
 			<div class="relative z-20 grid grid-cols-12 gap-6">
-				<div class="relative col-span-12 lg:col-span-4 flex flex-col shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
+				<div v-for="(item, index) in all_program" :key="index" class="relative col-span-12 lg:col-span-4 flex flex-col shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
 					<nuxt-img src="/img/comichrz.png" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
 					<div class="relative py-6 px-8">
 						<p class="font-semibold font-oswald text-xl text-btn-blue pb-3">
-							Program EXPO (Extra e-Deposito)
+							{{ item.nama_program }}
 						</p>
 						<div class="space-y-2">
 							<div class="flex items-center gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">01 November 2023 s.d. 31 December 2023</p>
+								<p class="text-sm">{{ item.periode_program }}</p>
 							</div>
 							<div class="flex items-center gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:book" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">eDeposito BTN</p>
+								<p class="text-sm">{{ item.jenis_program }}</p>
 							</div>
-							<div class="flex items-center pb-16 gap-x-2">
+							<div class="flex items-center gap-x-2">
 								<p class="leading-none">
 									<Icon name="lucide:users" class="text-lg text-btn-blue" />
 								</p>
-								<p class="text-sm">Seluruh Outlet Bank BTN (KC/KCP Kelas 1/KCP Kelas 2)</p>
+								<p class="text-sm">{{ item.nasabah_program }}</p>
+							</div>
+							<div class="flex items-center pb-16 gap-x-2">
+								<p class="leading-none">
+									<Icon name="lucide:map-pin" class="text-lg text-btn-blue" />
+								</p>
+								<p class="text-sm">{{ item.lokasi_program }}</p>
 							</div>
 						</div>
 					</div>
 					<div class="absolute bottom-6 left-8 flex items-center justify-end gap-x-2">
-						<nuxt-link to="/">
+						<nuxt-link :to="`/program/${item.id_program}`">
 							<ButtonBaseSmall class="btn-invert">
 								<Icon name="lucide:clipboard-list" class="text-lg" />
 								<span>Detail Program</span>
@@ -291,81 +183,8 @@
 					</div>
 					
 				</div>
-				<div class="relative col-span-12 lg:col-span-4 flex flex-col shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<nuxt-img src="/img/comichrz.png" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					<div class="relative py-6 px-8">
-						<p class="font-semibold font-oswald text-xl text-btn-blue pb-3">
-							Program Akuisisi, Transaksi dan Loyalty (ATRAKSI)
-						</p>
-						<div class="space-y-2">
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">01 Agustus 2023 s.d. 31 December 2023</p>
-							</div>
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:book" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Tabungan BTN Bisnis di Seluruh Outlet Bank BTN (KC/KCP Kelas 1/KCP Kelas 2)</p>
-							</div>
-							<div class="flex items-center pb-16 gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:users" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Nasabah Perorangan Bank BTN</p>
-							</div>
-						</div>
-					</div>
-					<div class="absolute bottom-6 left-8 flex items-center justify-end gap-x-2">
-						<nuxt-link to="/">
-							<ButtonBaseSmall class="btn-invert">
-								<Icon name="lucide:clipboard-list" class="text-lg" />
-								<span>Detail Program</span>
-							</ButtonBaseSmall>
-						</nuxt-link>
-					</div>
-					
-				</div>
-				<div class="relative col-span-12 lg:col-span-4 flex flex-col shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<nuxt-img src="/img/comichrz.png" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					<div class="relative py-6 px-8">
-						<p class="font-semibold font-oswald text-xl text-btn-blue pb-3">
-							Program Welcome to BTN Mobile IV
-						</p>
-						<div class="space-y-2">
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:clock" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">25 November 2023 s.d. 24 December 2023</p>
-							</div>
-							<div class="flex items-center gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:book" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">BTN Mobile</p>
-							</div>
-							<div class="flex items-center pb-16 gap-x-2">
-								<p class="leading-none">
-									<Icon name="lucide:users" class="text-lg text-btn-blue" />
-								</p>
-								<p class="text-sm">Nasabah Perorangan Bank BTN</p>
-							</div>
-						</div>
-					</div>
-					<div class="absolute bottom-6 left-8 flex items-center justify-end gap-x-2">
-						<nuxt-link to="/">
-							<ButtonBaseSmall class="btn-invert">
-								<Icon name="lucide:clipboard-list" class="text-lg" />
-								<span>Detail Program</span>
-							</ButtonBaseSmall>
-						</nuxt-link>
-					</div>
-					
-				</div>
-			</div>
+
+            </div>
 			<p class="absolute py-10 -right-72 lg:-right-16 opacity-10 top-5">
 				<Icon name="ElementThree" class="text-[35rem] lg:text-[50rem]"/>
 			</p>
@@ -375,3 +194,16 @@
 		</div>
 	</div>
 </template>
+
+<script setup lang="ts">
+const storePromo = usePromoStore()
+
+const {
+    all_promo,
+	all_program
+} = storeToRefs(storePromo)
+</script>
+
+<style scoped>
+
+</style>

@@ -5,7 +5,7 @@
 				<h3 class="text-2xl whitespace-nowrap lg:text-4xl font-black text-btn-blue">
 					List Seluruh Promo
 				</h3>
-				<div class=" bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-r-full">
+				<div class=" bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow w-full h-[0.2rem] rounded-r-full">
 				</div>
 			</div>
             <div class="flex items-start gap-6 relative pb-20">

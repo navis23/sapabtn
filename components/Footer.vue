@@ -1,7 +1,7 @@
 <template>
     <div class="relative overflow-hidden px-4 lg:px-32">
         <div class="relative flex gap-x-2 lg:gap-x-6 justify-evenly items-center text-center w-full z-30">
-			<div class=" bg-gradient-to-r from-btn-yellow via-btn-red to-btn-blue2 w-full h-[0.2rem] rounded-full">
+			<div class=" bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow w-full h-[0.2rem] rounded-full">
 			</div>
 		</div>
         <div class="relative z-20 flex flex-col lg:flex-row items-center gap-3 justify-between px-4 pt-8 pb-4 text-btn-blue2 overflow-hidden">

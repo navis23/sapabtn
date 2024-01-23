@@ -1,10 +1,10 @@
 <template>
     <div class="relative overflow-hidden">
         <div v-for="(item, index) in selectedPromo" :key="index" class="relative min-h-screen px-4 lg:px-32 pt-28">
-            <h1 class="text-2xl whitespace-nowrap lg:text-4xl font-black text-btn-blue mb-6 lg:mb-10">
+            <h1 class="relative z-20 text-2xl lg:text-4xl font-black text-btn-blue mb-6 lg:mb-10">
 				{{ item.nama_promo }}
 			</h1>
-            <div class="grid grid-cols-12 mb-20 overflow-hidden">
+            <div class="relative z-20 grid grid-cols-12 mb-20 overflow-hidden">
                 <div class="col-span-12 lg:col-span-5 overflow-hidden">
                     <nuxt-img :src="item.gambar_promo" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center rounded-lg w-full"/>
                 </div>					
@@ -48,6 +48,12 @@
                     </div>
                 </div>
             </div>
+            <p class="absolute py-10 -right-72 lg:-right-16 opacity-10 top-5">
+				<Icon name="ElementThree" class="text-[35rem] lg:text-[50rem]"/>
+			</p>
+			<p class="absolute py-10 -left-10 lg:-left-72 opacity-10 bottom-20 lg:-bottom-18">
+				<Icon name="ElementThree" class="text-[32rem] lg:text-[40rem] rotate-90"/>
+			</p>
         </div>
     </div>
 </template>

@@ -153,6 +153,140 @@ export const usePromoStore = defineStore('promoStore', {
                     },
                 ]
             }
+        ],
+
+        all_program : [
+            {
+                id_program : 1,
+                nama_program : 'Program EXPO (Extra e-Deposito)',
+                deskripsi_program : 'Pemberian benefit hadiah e-voucher kepada nasabah yang melakukan pembukaan e-deposito baru',
+                periode_program : '1 November 2023 s.d. 31 Desember 2023',
+                jenis_program : 'E-Deposito',
+                nasabah_program : 'Seluruh nasabah bank BTN',
+                lokasi_program : 'Seluruh Outlet Bank BTN (KC/KCP Kelas 1/KCP Kelas 2)',
+                benefit_program : [
+                    {
+                        id_benefit : 1,
+                        keterangan_benefit : 'e-Voucher yang akan diberikan adalah e-voucher indomaret.'
+                    },
+                    {
+                        id_benefit : 2,
+                        keterangan_benefit : 'e-Voucher akan dikirimkan melalui email//WA Nasabah dalam waktu 5 x 24 jam.'
+                    },
+                    {
+                        id_benefit : 3,
+                        keterangan_benefit : 'e-Voucher 25.000 untuk penempatan 5-25 jt, 50.000 untuk >25 - 50jt & 100.000 untuk >50 jt'
+                    },
+                ],
+                syarat_program : [
+                    {
+                        id_syarat : 1,
+                        keterangan : 'Pemberian  benefit  bagi  nasabah yang  melakukan  pembukaan rekening eDeposito ritel min Rp.5 Juta.'
+                    },
+                    {
+                        id_syarat : 2,
+                        keterangan : 'Benefit diberikan kepada nasabah yang pertama kali membuka E-Deposito.'
+                    },
+                    {
+                        id_syarat : 3,
+                        keterangan : 'Benefit diberikan sekali selama program.'
+                    },
+                    {
+                        id_syarat : 4,
+                        keterangan : 'Penempatan deposito minimal jangka waktu 3 bulan.'
+                    },
+                    {
+                        id_syarat : 5,
+                        keterangan : 'Voucher yang diberikan berupa voucher voucher belanja elektronik (VBE).'
+                    },
+                    {
+                        id_syarat : 6,
+                        keterangan : 'E-Voucher akan dikirimkan melalui WA Nasabah.'
+                    }
+                ]
+            },
+            {
+                id_program : 2,
+                nama_program : 'Program E-Voucher Tabungan Online',
+                deskripsi_program : 'Pemberian benefit E-Voucher kepada nasabah yang melakukan pembukaan tabungan online',
+                periode_program : '1 November 2023 s.d. 31 Desember 2023',
+                jenis_program : 'Tabungan Batara Online',
+                nasabah_program : 'Seluruh nasabah bank BTN',
+                lokasi_program : 'Seluruh Outlet Bank BTN (KC/KCP Kelas 1/KCP Kelas 2)',
+                benefit_program : [
+                    {
+                        id_benefit : 1,
+                        keterangan_benefit : 'Produk Batara Online setoran awal 500.000 mendapat benefit E-Voucher 50.000.'
+                    },
+                    {
+                        id_benefit : 2,
+                        keterangan_benefit : 'Produk Bundling Batara Online & Siap Online, setoran awal 500.000 & installment Siap 100.000 mendapata benefit E-Voucher 100.000.'
+                    },
+                    {
+                        id_benefit : 3,
+                        keterangan_benefit : 'e-Voucher berupa voucher belanja elektronik (VBE) Indomaret.'
+                    },
+                    {
+                        id_benefit : 4,
+                        keterangan_benefit : 'Khusus KC yang tidak ada indomaret (KC Padang) maka beneft dialihkan menjadi e-Voucher Tokopedia'
+                    },
+                    {
+                        id_benefit : 5,
+                        keterangan_benefit : 'Voucher dikirm minimal 5 hari kerja.'
+                    },
+                ],
+                syarat_program : [
+                    {
+                        id_syarat : 1,
+                        keterangan : 'Pemberian benefit bagi Nasabah yang melakukan pembukaan rekening Tabungan Batara Online yang sudah melakukan setoran awal.'
+                    },
+                    {
+                        id_syarat : 2,
+                        keterangan : 'Benefit diberikan kepada nasabah yang membuka Tabungan Batara Online melalui mobile banking.'
+                    },
+                    {
+                        id_syarat : 3,
+                        keterangan : 'Setoran awal minimal 500.000.'
+                    },
+                    {
+                        id_syarat : 4,
+                        keterangan : 'Apabila nasabah membuka Tabungan Siap Online min 100.00 maka akan mendapat tambahan benefit.'
+                    }
+                ]
+            },
+            {
+                id_program : 3,
+                nama_program : 'Program Cashback Bank BTN',
+                deskripsi_program : 'Pemberian benefit bagi  Nasabah yang melakukan pembukaan rekening Tabungan BTN Siap! dengan min setoran rutin Rp 100 ribu dengan jangka waktu minimal 24 Bulan.',
+                periode_program : '1 Oktober 2023 s.d. 31 Desember 2023',
+                jenis_program : 'Tabungan BTN Siap',
+                nasabah_program : 'Seluruh nasabah bank BTN',
+                lokasi_program : 'Seluruh Outlet Bank BTN (KC/KCP Kelas 1/KCP Kelas 2)',
+                benefit_program : [
+                    {
+                        id_benefit : 1,
+                        keterangan_benefit : 'Setoran rutin 100.000 - 500.000 mendapat cashback 25.000.'
+                    },
+                    {
+                        id_benefit : 2,
+                        keterangan_benefit : 'Setoran rutin >500.000 - 1.000.000 mendapat cashback 50.000.'
+                    },
+                    {
+                        id_benefit : 3,
+                        keterangan_benefit : 'Setoran rutin >1.000.000 mendapat cashback 100.000.'
+                    }
+                ],
+                syarat_program : [
+                    {
+                        id_syarat : 1,
+                        keterangan : 'Minimal setoran 100.000 dalam jangka waktu minimal 24 bulan.'
+                    },
+                    {
+                        id_syarat : 2,
+                        keterangan : 'Nasabah wajib teraktivasi Mobile Banking.'
+                    },
+                ]
+            },
         ]
 
     }),
