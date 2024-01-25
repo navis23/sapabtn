@@ -127,7 +127,7 @@
 
 		<!-- latest program section -->
 		<div class="relative px-4 lg:px-32 py-10 lg:pb-28 overflow-hidden">
-			<div class="relative z-20 flex items-center justify-between mb-8">
+			<div class="relative z-20 flex items-center justify-between mb-6">
 				<h3 class="text-2xl lg:text-4xl font-black text-btn-blue">
 					Program Terbaru
 				</h3>
@@ -140,9 +140,12 @@
 			</div>
 
 			<div class="relative z-20 grid grid-cols-12 gap-6">
-				<div v-for="(item, index) in all_program" :key="index" class="relative col-span-12 lg:col-span-4 flex flex-col shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
-					<nuxt-img src="/img/comichrz.png" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
-					<div class="relative py-6 px-8">
+				<div v-for="(item, index) in all_program" :key="index" class="relative col-span-12 lg:col-span-4 flex flex-col">
+					<div class="relative h-36 px-6">
+
+						<nuxt-img src="/img/comichrz3.png" format="webp" loading="lazy" sizes="sm:50vw" class="top-2 lg:top-1 z-20 absolute object-cover object-center w-80"/>
+					</div>
+					<div class="relative pb-6 pt-14 px-8 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
 						<p class="font-semibold font-oswald text-xl text-btn-blue pb-3">
 							{{ item.nama_program }}
 						</p>
