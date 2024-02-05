@@ -32,10 +32,10 @@
 				<div v-motion-slide-bottom :delay="500" class="relative w-full rounded-lg z-20 bg-gradient-to-r from-btn-blue2 via-btn-red to-btn-yellow p-3 lg:p-6">
 					<div class="grid grid-cols-12 gap-3 lg:gap-6">
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
-							<nuxt-img src="/img/promo06.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
+							<nuxt-img src="/img/promo09.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
 						</div>
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
-							<nuxt-img src="/img/promo05.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
+							<nuxt-img src="/img/promo08.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
 						</div>
 						<div class="col-span-6 lg:col-span-3 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-gray-700 hover:scale-105 transition-all duration-300 ">
 							<nuxt-img src="/img/promo01.jpg" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center"/>
