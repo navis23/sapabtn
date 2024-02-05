@@ -67,6 +67,12 @@ const storePromo = usePromoStore()
 const {
     all_program
 } = storeToRefs(storePromo)
+
+const fetchProgram = computed(() => {
+	all_program.value.sort((a, b) => {
+		return a.id_program - b.id_program
+	});
+})
 </script>
 
 <style scoped>

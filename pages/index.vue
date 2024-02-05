@@ -73,7 +73,7 @@
 			</div>
 			<div class="relative z-20 grid grid-cols-12 gap-6">
 				<!-- start promos card -->
-				<div v-for="(item, index) in all_promo" :key="index" class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
+				<div v-for="(item, index) in all_promo.slice(0,4)" :key="index" class="col-span-12 lg:col-span-6 grid grid-cols-6 shadow-md bg-slate-50 shadow-gray-400 rounded-lg overflow-hidden">
 					<div class="col-span-6 lg:col-span-2">
 						<nuxt-img :src="item.gambar_promo" format="webp" loading="lazy" sizes="sm:50vw" class="object-cover object-center w-full"/>
 					</div>					
@@ -140,7 +140,7 @@
 			</div>
 
 			<div class="relative z-20 grid grid-cols-12 gap-6">
-				<div v-for="(item, index) in all_program" :key="index" class="relative col-span-12 lg:col-span-4 flex flex-col">
+				<div v-for="(item, index) in all_program.slice(0,3)" :key="index" class="relative col-span-12 lg:col-span-4 flex flex-col">
 					<div class="relative h-36 px-6">
 
 						<nuxt-img src="/img/comichrz3.png" format="webp" loading="lazy" sizes="sm:50vw" class="top-2 lg:top-1 z-20 absolute object-cover object-center w-80"/>
